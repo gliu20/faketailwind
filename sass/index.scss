@@ -1,9 +1,13 @@
 @use "functions/rwd";
 @use "conf";
 
-@use "whitespace/padding";
-@use "whitespace/margin";
+/////////////////////// whitespace
+@include rwd.responsiveAll("m","margin", conf.$whitespaceScale);
+@include rwd.responsiveAll("p","padding", conf.$whitespaceScale);
 
+
+////////////////// colors
 @include rwd.responsiveAll("text","color", conf.$colors);
 @include rwd.responsiveAll("bg","background-color", conf.$colors);
 
+@include rwd.directionalResponsiveAll("border","border-color", conf.$colors);

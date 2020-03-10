@@ -1,6 +1,8 @@
 // rwd = responsive web design
 
 @use "sass:map";
+@use "sass:string";
+@use "../conf";
 
 $breakpoints: (
     "sm": 0px,
@@ -42,4 +44,31 @@ $breakpoints: (
     @each $breakpointType, $breakpointValue in $breakpoints {
         @include responsive($className, $breakpointType, $prop, $values)
     }
+}
+
+@mixin directionalResponsiveAll ($className, $prop, $values) {
+    // main
+    @include responsiveAll($className, $prop, conf.$whitespaceScale);
+
+    // vertical
+    @include responsiveAll($className + "y",direction($prop,"top"), $values);
+    @include responsiveAll($className + "y",direction($prop,"bottom"), $values);
+    @include responsiveAll($className + "yt",direction($prop,"top"), $values);
+    @include responsiveAll($className + "yb",direction($prop,"bottom"), $values);
+
+    // horizontal
+    @include responsiveAll($className + "x",direction($prop,"left"), $values);
+    @include responsiveAll($className + "x",direction($prop,"right"), $values);
+    @include responsiveAll($className + "xl",direction($prop,"left"), $values);
+    @include responsiveAll($className + "xr",direction($prop,"right"), $values);
+}
+
+@function direction ($prop,$direction) {
+    $prop: $prop + "-";
+    $index: string.index($prop, "-");
+
+    $beginProp: string.slice($prop, 1, $index - 1);
+    $endProp: string.slice($prop, $index + 1,-2);
+
+    @return $beginProp + "-" + $direction + "-" + $endProp;
 }

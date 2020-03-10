@@ -70,5 +70,10 @@ $breakpoints: (
     $beginProp: string.slice($prop, 1, $index - 1);
     $endProp: string.slice($prop, $index + 1,-2);
 
-    @return $beginProp + "-" + $direction + "-" + $endProp;
+    @if string.length($endProp) == 0 {
+        @return $beginProp + "-" + $direction;
+    }
+    @else {
+        @return $beginProp + "-" + $direction + "-" + $endProp;
+    }
 }

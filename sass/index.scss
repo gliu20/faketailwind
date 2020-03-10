@@ -2,8 +2,8 @@
 @use "conf";
 
 /////////////////////// whitespace
-@include rwd.responsiveAll("m","margin", conf.$whitespaceScale);
-@include rwd.responsiveAll("p","padding", conf.$whitespaceScale);
+@include rwd.directionalResponsiveAll("m","margin", conf.$whitespaceScale);
+@include rwd.directionalResponsiveAll("p","padding", conf.$whitespaceScale);
 
 
 ////////////////// colors

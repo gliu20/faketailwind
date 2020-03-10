@@ -18,7 +18,7 @@ $whitespaceScale: (
     "80":80px
 );
 
-$colors: (
+$hues: (
     "red":#d50000,
     "pink":#c51162,
     "purple":#aa00ff,
@@ -42,4 +42,5 @@ $colors: (
     "white": #ffffff
 );
 
-$colors: colors.colorScale($colors);
+// add in 100,200,300, etc.
+$colors: colors.colorScale($hues);

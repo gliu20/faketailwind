@@ -11,8 +11,16 @@ $breakpoints: (
 
 @mixin forEachValue ($className, $type, $prop, $values) {
     @each $valueKey, $value in $values {
-        .#{$className}-#{$valueKey}--#{$type} {
-            #{$prop}: $value;
+        @if $type == "sm" {
+            .#{$className}-#{$valueKey},
+            .#{$className}-#{$valueKey}--#{$type} {
+                #{$prop}: $value;
+            }
+        }
+        @else {
+            .#{$className}-#{$valueKey}--#{$type} {
+                #{$prop}: $value;
+            }
         }
     }
 }

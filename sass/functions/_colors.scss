@@ -30,5 +30,8 @@
     $newColorScale: map.merge($newColorScale, color($colors,"800",-10%));
     $newColorScale: map.merge($newColorScale, color($colors,"900",-20%));
 
+    
+    $newColorScale: map.merge($newColorScale, ("current":currentColor));
+
     @return $newColorScale;
 }

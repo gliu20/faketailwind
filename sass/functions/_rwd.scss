@@ -48,7 +48,7 @@ $breakpoints: (
 
 @mixin directionalResponsiveAll ($className, $prop, $values) {
     // main
-    @include responsiveAll($className, $prop, conf.$whitespaceScale);
+    @include responsiveAll($className, $prop, $values);
 
     // vertical
     @include responsiveAll($className + "y",direction($prop,"top"), $values);

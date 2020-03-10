@@ -61,3 +61,43 @@ $hues: (
 
 // this adds in 100,200,300, etc.
 $colors: colors.colorScale($hues);
+
+
+$fontStyles: (
+    "normal": normal,
+    "italic": italic
+);
+
+$fontWeights: (
+    "100":100,
+    "200":200,
+    "300":300,
+    "400":400,
+    "500":500,
+    "600":600,
+    "700":700,
+    "800":800,
+    "900":900
+);
+
+$fontHeights: (
+    "0":1,
+    "xs":1.25,
+    "sm":1.375,
+    "md":1.5,
+    "lg":1.625,
+    "xl":2
+);
+
+$textAlign: (
+    "center":center,
+    "justify":justify,
+    "left":left,
+    "right":right
+);
+
+$textDecorations: (
+    "strike": line-through,
+    "underline": underline,
+    "none":none
+);

@@ -2,7 +2,7 @@
 @use "functions/rwd";
 @use "conf";
 
-// sizing
+///////// sizing
 @include rwd.responsiveAll("w","width", conf.$grid);
 @include rwd.responsiveAll("h","height", conf.$grid);
 
@@ -12,7 +12,6 @@
 @include rwd.responsiveAll("min-h","min-height", conf.$grid);
 
 /////////////////////// whitespace
-@debug map.merge(conf.$whitespaceScale,("auto":auto));
 @include rwd.directionalResponsiveAll("m","margin", map.merge(conf.$whitespaceScale,("auto":auto)));
 @include rwd.directionalResponsiveAll("p","padding", conf.$whitespaceScale);
 
@@ -22,3 +21,11 @@
 @include rwd.responsiveAll("bg","background-color", conf.$colors);
 
 @include rwd.directionalResponsiveAll("border","border-color", conf.$colors);
+
+/////////////////// fonts
+@include rwd.responsiveAll("text","font-style", conf.$fontStyles);
+@include rwd.responsiveAll("text-bold","font-weight", conf.$fontWeights);
+@include rwd.responsiveAll("text-height","line-height", conf.$fontHeights);
+@include rwd.responsiveAll("text","text-align", conf.$textAlign);
+@include rwd.responsiveAll("text","text-decoration", conf.$textDecorations);
+// can support text-transform

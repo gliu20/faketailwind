@@ -1,0 +1,37 @@
+// rwd = responsive web design
+
+@use "sass:map";
+
+$breakpoints: (
+    "sm": 0px,
+    "md": 500px,
+    "lg": 900px,
+    "xl": 1200px
+);
+
+@mixin forEachValue ($className, $type, $prop, $values) {
+    @each $valueKey, $value in $values {
+        .#{$className}-#{$valueKey}--#{$type} {
+            #{$prop}: $value;
+        }
+    }
+}
+
+@mixin responsive ($className, $type, $prop, $values) {
+    $breakpoint: map.get($breakpoints,$type);
+
+    @if $type == "sm" {
+        @include forEachValue($className, $type, $prop, $values)
+    }
+    @else {
+        @media (min-width: $breakpoint) {
+            @include forEachValue($className, $type, $prop, $values)
+        }
+    }
+}
+
+@mixin responsiveAll ($className, $prop, $values) {
+    @each $breakpointType, $breakpointValue in $breakpoints {
+        @include responsive($className, $breakpointType, $prop, $values)
+    }
+}

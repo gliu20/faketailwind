@@ -1,3 +1,8 @@
+
+@use "functions/colors";
+
+// conf = configuration
+
 $whitespaceScale: (
     "0":0px,
     "4":4px,
@@ -36,3 +41,5 @@ $colors: (
     "black": #000000,
     "white": #ffffff
 );
+
+$colors: colors.colorScale($colors);

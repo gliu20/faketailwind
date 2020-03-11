@@ -17,10 +17,7 @@ $grid: (
     "10":10 / 12 * 100%,
     "11":11 / 12 * 100%,
     "12":12 / 12 * 100%,
-    "auto":auto
-);
-
-$maxWidths: (
+    "auto":auto,
     "xs": 200px / 16px * 1rem,
     "sm": 300px / 16px * 1rem,
     "md": 600px / 16px * 1rem,
@@ -147,4 +144,28 @@ $roundnessScale: (
     "12":12px / 16px * 1rem,
     "16":16px / 16px * 1rem,
     "20":20px / 16px * 1rem
+);
+
+
+$flexDirection: (
+    "row": row,
+    "row-reverse": row-reverse,
+    "column": column,
+    "column-reverse": column-reverse
+);
+
+$flexScale: (
+    "0":0,
+    "1":1,
+    "2":2,
+    "3":3,
+    "4":4,
+    "5":5,
+    "6":6,
+    "7":7,
+    "8":8,
+    "9":9,
+    "10":10,
+    "11":11,
+    "12":12
 );

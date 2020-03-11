@@ -13,7 +13,6 @@
 @include rwd.responsiveAll("h","height", conf.$grid);
 
 @include rwd.responsiveAll("max-w","max-width", conf.$grid);
-@include rwd.responsiveAll("max-w","max-width", conf.$maxWidths);
 @include rwd.responsiveAll("max-h","max-height", conf.$grid);
 @include rwd.responsiveAll("min-w","min-width", conf.$grid);
 @include rwd.responsiveAll("min-h","min-height", conf.$grid);
@@ -46,3 +45,9 @@
 
 ///////////////// display
 @include rwd.responsiveAll("disp","display", conf.$display);
+
+////////////////// flex
+@include rwd.responsiveAll("flex-dir","flex-direction", conf.$flexDirection);
+@include rwd.responsiveAll("flex-grow","flex-grow", conf.$flexScale);
+@include rwd.responsiveAll("flex-shrink","flex-shrink", conf.$flexScale);
+@include rwd.responsiveAll("flex","flex", conf.$flexScale);

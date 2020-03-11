@@ -22,10 +22,16 @@
 
 @include rwd.directionalResponsiveAll("border","border-color", conf.$colors);
 
-/////////////////// fonts
+/////////////////// fonts/text
+@include rwd.responsiveAll("text","font-size", conf.$textSizes);
 @include rwd.responsiveAll("text","font-style", conf.$fontStyles);
 @include rwd.responsiveAll("text-bold","font-weight", conf.$fontWeights);
 @include rwd.responsiveAll("text-height","line-height", conf.$fontHeights);
 @include rwd.responsiveAll("text","text-align", conf.$textAlign);
 @include rwd.responsiveAll("text","text-decoration", conf.$textDecorations);
-// can support text-transform
+// TODO can support text-transform
+@include rwd.responsiveAll("text","white-space", conf.$textWrap);
+
+
+///////////////// display
+@include rwd.responsiveAll("disp","display", conf.$display);

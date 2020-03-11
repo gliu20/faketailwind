@@ -101,3 +101,31 @@ $textDecorations: (
     "underline": underline,
     "none":none
 );
+
+$textWrap: (
+    "wrap":normal,
+    "nowrap":nowrap,
+    "pre":pre,
+    "pre-line":pre-line,
+    "pre-wrap":pre-wrap
+);
+
+$textSizes: (
+    "sm": 14px / 16px * 1rem,
+    "md": 16px / 16px * 1rem,
+    "lg": 18px / 16px * 1rem,
+    "xl": 22px / 16px * 1rem,
+    "2x": 26px / 16px * 1rem,
+    "3x": 32px / 16px * 1rem,
+    "4x": 38px / 16px * 1rem,
+    "5x": 46px / 16px * 1rem,
+    "6x": 54px / 16px * 1rem
+);
+
+$display: (
+    "block": block,
+    "inline-block": inline-block,
+    "inline": inline,
+    "flex": flex,
+    "inline-flex": inline-flex
+);

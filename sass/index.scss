@@ -35,3 +35,6 @@
 
 ///////////////// display
 @include rwd.responsiveAll("disp","display", conf.$display);
+
+//need max-width but better
+//box-sizing:border-box;

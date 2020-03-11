@@ -71,7 +71,7 @@ $colors: colors.colorScale($hues);
 
 
 $fontStyles: (
-    "normal": normal,
+    "notitalic": normal,
     "italic": italic
 );
 
@@ -106,7 +106,7 @@ $textAlign: (
 $textDecorations: (
     "strike": line-through,
     "underline": underline,
-    "none":none
+    "normal":none
 );
 
 $textWrap: (

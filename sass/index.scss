@@ -51,3 +51,9 @@
 @include rwd.responsiveAll("flex-grow","flex-grow", conf.$flexScale);
 @include rwd.responsiveAll("flex-shrink","flex-shrink", conf.$flexScale);
 @include rwd.responsiveAll("flex","flex", conf.$flexScale);
+@include rwd.responsiveAll("flex-wrap","flex-wrap", conf.$flexWrap);
+@include rwd.responsiveAll("justify-content","justify-content", conf.$flexJustify);
+@include rwd.responsiveAll("align-self","align-self", conf.$flexAlign);
+@include rwd.responsiveAll("align-items","align-items", conf.$flexAlign);
+@include rwd.responsiveAll("align-content","align-content", conf.$flexJustify);
+

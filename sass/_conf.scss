@@ -170,3 +170,28 @@ $flexScale: (
     "11":11,
     "12":12
 );
+
+$flexWrap: (
+    "nowrap":nowrap,
+    "wrap":wrap,
+    "wrap-reverse":wrap-reverse
+);
+
+$flexJustify: (
+    "flex-start":flex-start,
+    "flex-end":flex-end,
+    "center":center,
+    "space-between":space-between,
+    "space-around":space-around,
+    "space-evenly":space-evenly,
+    "stretch":stretch
+);
+
+$flexAlign: (
+    "auto":auto,
+    "flex-start":flex-start,
+    "flex-end":flex-end,
+    "center":center,
+    "baseline":baseline,
+    "stretch":stretch
+);

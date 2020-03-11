@@ -22,6 +22,10 @@
 
 @include rwd.directionalResponsiveAll("border","border-color", conf.$colors);
 
+////// rounding
+@include rwd.directionalResponsiveAll("r","border-radius", conf.$roundnessScale);
+
+
 /////////////////// fonts/text
 @include rwd.responsiveAll("text","font-size", conf.$textSizes);
 @include rwd.responsiveAll("text","font-style", conf.$fontStyles);

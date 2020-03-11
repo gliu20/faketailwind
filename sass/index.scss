@@ -1,6 +1,14 @@
 @use "sass:map";
 @use "functions/rwd";
 @use "conf";
+@use "normalize";
+
+// custom reset
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 
 ///////// sizing
 @include rwd.responsiveAll("w","width", conf.$grid);
@@ -40,6 +48,3 @@
 
 ///////////////// display
 @include rwd.responsiveAll("disp","display", conf.$display);
-
-//need max-width but better
-//box-sizing:border-box;

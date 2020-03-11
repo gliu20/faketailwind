@@ -20,6 +20,16 @@ $grid: (
     "auto":auto
 );
 
+$maxWidths: (
+    "xs": 200px / 16px * 1rem,
+    "sm": 300px / 16px * 1rem,
+    "md": 600px / 16px * 1rem,
+    "lg": 800px / 16px * 1rem,
+    "xl": 900px / 16px * 1rem,
+    "2x": 1200px / 16px * 1rem,
+    "3x": 1400px / 16px * 1rem
+);
+
 $whitespaceScale: (
     "0":0px / 16px * 1rem,
     "4":4px / 16px * 1rem,

@@ -7,6 +7,7 @@
 @include rwd.responsiveAll("h","height", conf.$grid);
 
 @include rwd.responsiveAll("max-w","max-width", conf.$grid);
+@include rwd.responsiveAll("max-w","max-width", conf.$maxWidths);
 @include rwd.responsiveAll("max-h","max-height", conf.$grid);
 @include rwd.responsiveAll("min-w","min-width", conf.$grid);
 @include rwd.responsiveAll("min-h","min-height", conf.$grid);

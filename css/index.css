@@ -3067,7 +3067,7 @@ th {
     min-height: 87.5rem;
   }
 }
-.m-0,
+.m-0, h6, h5, h4, h3, h2, h1,
 .m-0--xs {
   margin: 0rem;
 }
@@ -56784,32 +56784,32 @@ th {
   font-size: 0.875rem;
 }
 
-.text-md,
+.text-md, h6,
 .text-md--xs {
   font-size: 1rem;
 }
 
-.text-lg,
+.text-lg, h5,
 .text-lg--xs {
   font-size: 1.125rem;
 }
 
-.text-xl,
+.text-xl, h4,
 .text-xl--xs {
   font-size: 1.375rem;
 }
 
-.text-2x,
+.text-2x, h3,
 .text-2x--xs {
   font-size: 1.625rem;
 }
 
-.text-3x,
+.text-3x, h2,
 .text-3x--xs {
   font-size: 2rem;
 }
 
-.text-4x,
+.text-4x, h1,
 .text-4x--xs {
   font-size: 2.375rem;
 }
@@ -57079,7 +57079,7 @@ th {
   font-weight: 300;
 }
 
-.text-bold-400,
+.text-bold-400, h6, h5, h4, h3, h2, h1,
 .text-bold-400--xs {
   font-weight: 400;
 }
@@ -57272,7 +57272,7 @@ th {
   line-height: 1.375;
 }
 
-.text-height-md,
+.text-height-md, p,
 .text-height-md--xs {
   line-height: 1.5;
 }

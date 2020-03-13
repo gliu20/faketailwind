@@ -104,3 +104,42 @@
         @extend .disp-none;
     }
 }
+
+@mixin headingBase {
+    @extend .text-bold-400;
+    @extend .m-0;
+}
+
+h1 { 
+    @extend .text-4x;
+    @include headingBase();
+}
+
+h2 { 
+    @extend .text-3x;
+    @include headingBase();
+}
+
+h3 { 
+    @extend .text-2x;
+    @include headingBase();
+}
+
+h4 { 
+    @extend .text-xl;
+    @include headingBase();
+}
+
+h5 { 
+    @extend .text-lg;
+    @include headingBase();
+}
+
+h6 { 
+    @extend .text-md;
+    @include headingBase();
+}
+
+p {
+    @extend .text-height-md;
+}

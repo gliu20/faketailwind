@@ -61,3 +61,46 @@
 ::selection{background:rgba(136,221,255,.4)}
 ::-moz-selection{background:rgba(136,221,255,.4)}
 
+.menu--open {
+    @extend .h-12;
+    @extend .w-12; 
+    @extend .disp-flex;
+    @extend .flex-dir-column;
+    @extend .align-items-center; 
+    @extend .justify-content-center;
+    position: absolute;top:0;left:0;
+
+    .menu-links {
+        @extend .my-8;
+        @extend .disp-inline-block;
+    }
+
+    .menu-close-btn {
+        position: absolute;top:0;left:0;
+        @extend .p-24;
+        @extend .disp-inline-block;
+    }
+
+    .menu-open-btn {
+        @extend .disp-none;
+    }
+}
+
+.menu {
+    &:target {
+        @extend .menu--open;
+    }
+    
+    .menu-links {
+        @extend .disp-none;
+        @extend .disp-inline-block--md;
+    }
+
+    .menu-open-btn {
+        @extend .disp-none--md;
+    }
+
+    .menu-close-btn {
+        @extend .disp-none;
+    }
+}

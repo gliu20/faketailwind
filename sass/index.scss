@@ -34,6 +34,7 @@
 
 /////////////////// fonts/text
 @include rwd.responsiveAll("text","font-size", conf.$textSizes);
+@include rwd.responsiveAll("text","font-family", conf.$fontFamilies);
 @include rwd.responsiveAll("text","font-style", conf.$fontStyles);
 @include rwd.responsiveAll("text-bold","font-weight", conf.$fontWeights);
 @include rwd.responsiveAll("text-height","line-height", conf.$fontHeights);
@@ -56,4 +57,7 @@
 @include rwd.responsiveAll("align-self","align-self", conf.$flexAlign);
 @include rwd.responsiveAll("align-items","align-items", conf.$flexAlign);
 @include rwd.responsiveAll("align-content","align-content", conf.$flexJustify);
+
+::selection{background:rgba(136,221,255,.4)}
+::-moz-selection{background:rgba(136,221,255,.4)}
 

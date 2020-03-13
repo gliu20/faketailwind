@@ -5,15 +5,16 @@
 @use "../conf";
 
 $breakpoints: (
-    "sm": 0px,
-    "md": 500px,
+    "xs": 0px,
+    "sm": 450px,
+    "md": 750px,
     "lg": 900px,
     "xl": 1200px
 );
 
 @mixin forEachValue ($className, $type, $prop, $values) {
     @each $valueKey, $value in $values {
-        @if $type == "sm" {
+        @if $type == "xs" {
             .#{$className}-#{$valueKey},
             .#{$className}-#{$valueKey}--#{$type} {
                 #{$prop}: $value;
@@ -30,7 +31,7 @@ $breakpoints: (
 @mixin responsive ($className, $type, $prop, $values) {
     $breakpoint: map.get($breakpoints,$type);
 
-    @if $type == "sm" {
+    @if $type == "xs" {
         @include forEachValue($className, $type, $prop, $values)
     }
     @else {

@@ -59359,7 +59359,7 @@ input, button {
 }
 
 .menu--open, .menu:target {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }

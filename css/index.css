@@ -397,6 +397,10 @@ th {
   box-sizing: border-box;
 }
 
+input, button {
+  border: 0;
+}
+
 .w-0,
 .w-0--xs {
   width: 0%;
@@ -59329,6 +59333,23 @@ th {
     align-content: stretch;
   }
 }
+.sr-only {
+  height: 1px;
+  width: 1px;
+  line-height: 1;
+  opacity: 0.001;
+  overflow: hidden;
+  position: absolute;
+}
+
+.sr-only-focusable:focus {
+  height: auto;
+  width: auto;
+  opacity: 1;
+  overflow: auto;
+  position: relative;
+}
+
 ::selection {
   background: rgba(136, 221, 255, 0.4);
 }

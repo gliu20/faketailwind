@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+input, button {
+    border:0;
+}
+
 ///////// sizing
 @include rwd.responsiveAll("w","width", conf.$grid);
 @include rwd.responsiveAll("h","height", conf.$grid);
@@ -57,6 +61,24 @@
 @include rwd.responsiveAll("align-self","align-self", conf.$flexAlign);
 @include rwd.responsiveAll("align-items","align-items", conf.$flexAlign);
 @include rwd.responsiveAll("align-content","align-content", conf.$flexJustify);
+
+
+.sr-only {
+    height: 1px;
+    width: 1px;
+    line-height: 1;
+    opacity: .001;
+    overflow: hidden;
+    position: absolute;
+}
+
+.sr-only-focusable:focus {
+    height:auto;
+    width:auto;
+    opacity:1;
+    overflow: auto;
+    position: relative;
+}
 
 ::selection{background:rgba(136,221,255,.4)}
 ::-moz-selection{background:rgba(136,221,255,.4)}

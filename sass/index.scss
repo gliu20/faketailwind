@@ -91,7 +91,6 @@ input, button {
     @extend .align-items-center; 
     @extend .justify-content-center;
     position: fixed;top:0;left:0;
-
     .menu-links {
         @extend .my-8;
         @extend .disp-inline-block;
